@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$bg-color: #232323;
+$text-color: #ffffff;
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.menu__icon {
+  width: 2rem;
+}
+
+.flex_jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+.flex_ai-center {
+  display: flex;
+  align-items: center;
+}
+
+.show-menu {
+  display: none;
+}
+
+.menu-open {
+  background-color: rgba(23, 23, 23, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+}
+
+.links-open {
+  //   padding: 2em 4em;
+  outline: 1px solid yellow;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  height: 60vh;
+  background-image: url("../img/header_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 -10px 10px -10px #000000;
+
+  & nav {
+    padding: 1em 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(23, 23, 23, 0.5);
+    backdrop-filter: blur(8px);
+
+    & .links {
+      & .link {
+        & .nav__link {
+          padding: 1em clamp(0.5em, 3vw, 2em);
+        }
+      }
+    }
+  }
+  & .menu__icon {
+    z-index: 99;
+  }
+}
+
+.main {
+  height: 200vh;
+}
+
+@media (width > 400px) {
+  // @media screen and (min-width: 400px) {
+  //   .nav {
+  //     background-color: rgba(23, 23, 23, 0.5);
+  //     backdrop-filter: blur(8px);
+
+  //     .links {
+  //       display: flex;
+  //       flex-direction: row !important;
+  //       position: static !important;
+  //       background-color: transparent !important;
+
+  //       & .link {
+  //         margin: 0 !important;
+  //         background-color: transparent !important;
+
+  //         & .nav__link {
+  //           padding: 1em clamp(0.5em, 3vw, 2em) !important;
+  //         }
+  //       }
+  //     }
+  .links {
+    display: flex;
+  }
+  .menu__icon {
+    display: none;
+  }
+  //   }
+}

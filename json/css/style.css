@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.menu__icon {
+  width: 2rem;
+}
+
+.flex_jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_ai-center {
+  display: flex;
+  align-items: center;
+}
+
+.show-menu {
+  display: none;
+}
+
+.menu-open {
+  background-color: rgba(23, 23, 23, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+}
+
+.links-open {
+  outline: 1px solid yellow;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #232323;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  height: 60vh;
+  background-image: url("../img/header_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 -10px 10px -10px #000000;
+}
+.header nav {
+  padding: 1em 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+.header nav .links .link .nav__link {
+  padding: 1em clamp(0.5em, 3vw, 2em);
+}
+.header .menu__icon {
+  z-index: 99;
+}
+
+.main {
+  height: 200vh;
+}
+
+@media (width > 400px) {
+  .links {
+    display: flex;
+  }
+  .menu__icon {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

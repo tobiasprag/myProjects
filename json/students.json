@@ -1,0 +1,38 @@
+{
+    "classes": [
+        {
+            "className": "Webbutveckling 1",
+            "students": [
+                {
+                    "studentName": "Alice Smith",
+                    "studentURL": "url.com"
+                },
+                {
+                    "studentName": "Bob Jones",
+                    "studentURL": "url.com"
+                },
+                {
+                    "studentName": "Charlie Johnson",
+                    "studentURL": "url.com"
+                }
+            ]
+        },
+        {
+            "className": "Webbutveckling 2",
+            "students": [
+                {
+                    "studentName": "David Brown",
+                    "studentURL": "url.com"
+                },
+                {
+                    "studentName": "Emily Davis",
+                    "studentURL": "url.com"
+                },
+                {
+                    "studentName": "Frank Taylor",
+                    "studentURL": "url.com"
+                }
+            ]
+        }
+    ]
+}
