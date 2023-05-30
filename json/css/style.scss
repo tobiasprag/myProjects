@@ -51,6 +51,8 @@ img.menu__icon {
   font-size: clamp(2rem, 6vw, 3rem);
 }
 
+
+
 * {
   box-sizing: border-box;
 }
@@ -80,6 +82,12 @@ body {
     width: 100%;
     background-color: rgba(23, 23, 23, 0.5);
     backdrop-filter: blur(8px);
+    transition: background ease-in-out 0.25s;
+
+    & .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
 
     & .links {
       & .link {
@@ -96,7 +104,26 @@ body {
 
 .main {
   height: 200vh;
+  padding: 2em 0;
+
+  & #classes {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+
 }
+
+.class {
+  padding: 1em;
+}
+
+.student {
+  background: #fff;
+  padding: 1em 2em;
+}
+
+
 
 @media (width > 400px) {
   // @media screen and (min-width: 400px) {
@@ -127,3 +154,10 @@ body {
   }
   //   }
 }
+
+.navOnScroll {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+  color: #232323;
+}
+
