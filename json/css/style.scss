@@ -46,6 +46,7 @@ img.menu__icon {
 }
 
 .links-open {
+  //   padding: 2em 4em;
   font-size: clamp(2rem, 6vw, 3rem);
 }
 
@@ -96,7 +97,7 @@ body {
   height: 200vh;
 }
 
-@media (width > 500px) {
+@media (width > 400px) {
   // @media screen and (min-width: 400px) {
   //   .nav {
   //     background-color: rgba(23, 23, 23, 0.5);
