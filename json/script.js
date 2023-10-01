@@ -2,6 +2,22 @@ const menuButton = document.querySelector(".menu__icon");
 const menu = document.querySelector(".links");
 const menuLinks = document.querySelectorAll(".link");
 const overflow = document.querySelector("body");
+const navBar = document.querySelector('.nav')
+const mainArea = document.querySelector('.main')
+
+
+window.addEventListener('scroll', () => { 
+if (mainArea.getBoundingClientRect().top < 0) {
+    navBar.classList.add('navOnScroll')
+  } else {
+    navBar.classList.remove('navOnScroll')
+  }
+  
+})
+
+
+
+
 
 menuButton.addEventListener("click", () => {
   menu.classList.toggle("show-menu");
@@ -50,3 +66,6 @@ fetch("students.json")
     });
   })
   .catch((error) => console.error(error));
+
+
+
