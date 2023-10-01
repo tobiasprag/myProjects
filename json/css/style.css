@@ -44,7 +44,6 @@ img.menu__icon {
 }
 
 .links-open {
-  outline: 1px solid yellow;
   font-size: clamp(2rem, 6vw, 3rem);
 }
 
@@ -91,7 +90,7 @@ body {
   height: 200vh;
 }
 
-@media (width > 400px) {
+@media (width > 500px) {
   .links {
     display: flex;
   }
